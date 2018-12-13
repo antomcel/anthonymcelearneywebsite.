@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>  
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+<script src="js/script.js"></script>  
+</head>
+
+
+
+<body>
+
+<h1><img src="images/itblogo.png" alt="logo R" width="400" height="250"></h1>
+
+<main> 
+<center><div class="navbar">
+<nav>
+  <div class="dropdown">
+    <button class="dropbtn, current2"><a href="index.html">Home</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn"><a href="#">History&#8628; </a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="area.html">Area</a>
+      <a href="ecology.html">Ecology +<br> Biodiversity</a>
+    </div>  
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn"><a href="about.html">About ITB</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>  
+	</div>
+    <div class="dropdown">
+    <button class="dropbtn"><a href="study.html">Study at ITB</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>  
+	</div> 
+    <div class="dropdown">
+    <button class="dropbtn"><a href="sports.html">Sports + Societies</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>  
+	</div>
+    <div class="dropdown">
+    <button class="dropbtn"><a href="contact.html">Contact </a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+  </div>
+      <div class="dropdown">
+    <button class="dropbtn"><a href="sitemap.html">Sitemap</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>  
+	</div>
+  </nav>
+</div>
+</center>
+<hr>
+
+<div class="row">
+  <div class="column">
+<br>
+
+</div>
+<br>
+<div class="column">
+<center>
+<div class="w3-content">
+  <img class="mySlides" src="images/slide2.png" alt="slide 1" width="800" height="400">
+  <img class="mySlides" src="images/slide1.png" alt="slide 2" width="800" height="400">
+  <img class="mySlides" src="images/slide3.png" alt="slide 3" width="800" height="400">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+</div>
+
+     <div class="column">                  
+
+</div>
+</div>    <!-- This is where the left hand side of the page ends. The right hand side starts here \/ -->
+
+
+
+
+<hr>
+</main> 
+<p>
+
+<center>
+
+<footer><small> <a href="sitemap.html"> SITEMAP</a><br>
+&copy;Copyright 2018</small></footer>
+</body>
+</html>
